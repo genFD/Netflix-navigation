@@ -20,9 +20,93 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
-  margin: 0;
-  padding: 10px;
+  /* overflow: hidden;
+  margin: 0; */
+  /* padding: 10px; */
   /* border: 8px solid #64ffda; */
   background-color: var(--dark-navy);
+}
+.logo {
+  font-size: 150px;
+  color: var(--green);
+  display: block;
+}
+.text {
+  text-transform: uppercase;
+}
+.nav-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 40px;
+  border-radius: 3px;
+  padding-left: 3rem;
+  padding-top: 1rem;
+}
+
+.menu:active {
+  transform: scale(0.78);
+}
+.close:active {
+  transform: scale(0.78);
+}
+.open-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  color: var(--green);
+  transform: scale(0.98);
+}
+.close-btn {
+  opacity: 0.3;
+  color: rgba(229, 9, 20);
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: var(--green);
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+.nav.visible {
+  transform: translateX(0);
+}
+.nav-black {
+  background-color: var(--dark-slate);
+  width: 60%;
+  max-width: 480px;
+  min-width: 320px;
+  transition-delay: 0.4s;
+}
+.nav-red {
+  background-color: var(--green);
+  width: 95%;
+}
+.nav-white {
+  background-color: var(--lightest-navy);
+  width: 95%;
+  padding: 40px;
+  position: relative;
+}
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+.list li {
+  margin: 20px 0;
+}
+.list li a {
+  color: var(--green);
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.list ul {
+  list-style-type: none;
+  padding-left: 20px;
 }
